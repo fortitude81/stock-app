@@ -1,0 +1,28 @@
+<nav-dir></nav-dir>
+
+<body class="list">
+  <h1>View Tracked Quotes</h1>
+  <table class='table' ng-if="$storage.quotes.length">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Open</th>
+        <th>Last Price</th>
+        <th>Difference</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat='quote in $storage.quotes track by $index'>
+        <td>{{quote.Name}}</td>
+        <td>{{quote.Open}}</td>
+        <td>{{quote.LastPrice}}</td>
+        <td>{{quote.ChangePercentYTD.toFixed(2)}}</td>
+        <td><button ng-click='removeQuote(quote)' type="button" class="btn btn-danger btn-sm">
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
