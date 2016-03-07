@@ -1,1 +1,2 @@
-# stock-app
+stock app
+track prices of stocks

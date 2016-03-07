@@ -89,7 +89,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif, #000000;
     font-weight: 800;
-    color: #f05f40;
+    color: #F05F40 ! important;
     font-size: 18px;
 }
 
@@ -115,6 +115,7 @@ aside {
 .navbar-default .nav>li.active>a:focus {
     color: #f05f40!important;
     background-color: transparent;
+    font-size: 16px;
 }
 
 .navbar-default .nav > li.active>a:hover,
@@ -492,5 +493,34 @@ body {
 
 h1.ng-scope {
    margin-top: 50px;
-   
 }
+
+.ng-binding {
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+}
+
+.form-group {
+    padding-left: 25px;
+}
+
+
+
+header .header-content .header-content-inner h1 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 58px;
+    color: #F05F40
+
+}
+
+body.ng-scope {
+    padding-left: 25px;
+}
+
+
