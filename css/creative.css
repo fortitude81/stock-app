@@ -519,8 +519,8 @@ header .header-content .header-content-inner h1 {
 
 }
 
-body.ng-scope {
+.container {
     padding-left: 25px;
+    padding-top: 30px;
 }
-
 
